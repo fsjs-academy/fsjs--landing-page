@@ -24,6 +24,10 @@ body {
   background-color: darkorange;
   border-radius: 10px;
 }
+.btn--center {
+  display: block !important;
+  margin: 0 auto;
+}
 
 .Photo--instructor {
   width: 250px;
@@ -48,7 +52,6 @@ body {
 }
 
 
-
 .Header {
   background-color: #222;
   color: #fafafa;
@@ -70,10 +73,34 @@ body {
   line-height: 1.5em;;
 }
 
+.CurriculumList {
+  padding-left: 0;
+}
+.CurriculumList__item {
+  list-style-type: none;
+  border: 2px solid #ddd;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  border-radius: 10px;
+  display: flex;
+}
+.CurriculumList__logo {
+  width: auto;
+  height: 48px;
+  margin: 0;
+  padding: 0.25em 0.75em 0.25em 0;
+}
+
 
 .Section__title {
   border-left: 5px solid darkorange;
-  padding-left: 1em;;
+  padding-left: 1em;
+  margin-bottom: 1.25em;
+}
+.Section__heading {
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.5em;
 }
 .Section__bg-color {
   background-color: #eaeaea;
@@ -164,6 +191,15 @@ body {
     font-size: 2em;
   }
 
+  .CurriculumList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .CurriculumList__item {
+    width: 30%;
+  }
+
   .btn__cta {
     display: inline-block;
     width: 450px;
@@ -195,6 +231,11 @@ body {
 }
 
 @media (min-width: 1120px) {
+  p {
+    font-size: 1.25em;
+    line-height: 1.25em;
+  }
+
   .Header__logo {
     margin: 3em 0;
     width: 512px;
@@ -213,6 +254,15 @@ body {
 
   .container {
     max-width: 1024px;
+  }
+
+  .CurriculumList {
+    font-size: 1.25em;
+    line-height: 1.25em;
+  }
+
+  .Section__title {
+    font-size: 2em;
   }
 
   .Photo--companies__item {
