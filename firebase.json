@@ -5,6 +5,15 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ]
+    ],
+     "redirects": [{
+      "source": "/confirmar",
+      "destination": "/confirmar.html",
+      "type": 301
+    },{
+      "source": "/gracias",
+      "destination": "/gracias.html",
+      "type": 301
+    }]
   }
 }
