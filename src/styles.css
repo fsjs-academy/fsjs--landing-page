@@ -10,7 +10,7 @@ body {
 }
 
 p {
-  font-size: 1.25em;
+  font-size: 1em;
   line-height: 1.55em;
 }
 
@@ -58,7 +58,6 @@ p {
   width: 100%;
 }
 
-
 .Header {
   background: url('./img/dots-large.svg') repeat rgb(51, 51, 51);
   color: #fafafa;
@@ -99,7 +98,6 @@ p {
   padding: 0.25em 0.75em 0.25em 0;
 }
 
-
 .Section__title {
   border-left: 5px solid darkorange;
   padding-left: 1em;
@@ -119,7 +117,7 @@ p {
   margin-bottom: 2em;
 }
 .Section__list li {
-  font-size: 1.25em;
+  font-size: 1em;
   margin-bottom: 1em;
 }
 
@@ -148,7 +146,6 @@ p {
   background-color: darkorange;
 }
 
-
 .Testimonials {
   display: flex;
   flex-direction: column;
@@ -161,13 +158,16 @@ p {
   padding: 1em;
 }
 .Testimonials__photo {
-  width: 100px;
+  width: 30%;
   margin: 0 1em 0 0;
 }
 .Testimonials__photo img {
   width: 100%;
   border-radius: 10%;
   margin: 0 auto;
+}
+.Testimonials__card__content {
+  width: 60%;
 }
 .Testimonials__name {
   margin: 0;
@@ -179,6 +179,7 @@ p {
 }
 .Testimonials__text {
   font-style: italic;
+  font-size: 1em;
 }
 
 
@@ -194,6 +195,10 @@ p {
 }
 
 @media (min-width: 760px) {
+  p {
+    font-size: 1.25em;
+  }
+  
   .Header__logo {
     margin: 2.5em 0;
     width: 512px;
@@ -210,6 +215,9 @@ p {
 
   .Section__title {
     font-size: 2em;
+  }
+  .Section__list li {
+    font-size: 1.25em;
   }
 
   .CurriculumList {
@@ -285,7 +293,7 @@ p {
     width: 175px;
   }
   .Photo--instructor {
-    margin-right: 1.5em;;
+    margin-right: 1.5em;
   } 
 
   .Testimonials {
@@ -293,6 +301,10 @@ p {
     justify-content: space-between;
   }
   .Testimonials__card {
+    width: 30%;
     margin: 0 0.5em;
+  }
+  .Testimonials__text {
+    width: 200px;
   }
 }
