@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf dist/",
     "build": "NODE_ENV=production parcel build src/*.html",
-    "deploy": "npm run clean && npm run build && npx firebase deploy"
+    "deploy": "npm run clean && npm run build && npx firebase deploy --public-url https://fullstackjs.academy"
   },
   "keywords": [],
   "author": "Carlos Azaustre <cazaustre@gmail.com> (https://carlosazaustre.es)",
