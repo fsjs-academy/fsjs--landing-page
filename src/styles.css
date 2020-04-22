@@ -1,5 +1,6 @@
 :root {
   --color-yellow: #FFB800;
+  --color-yellow-dark: darkorange;
 }
 
 body {
@@ -22,9 +23,14 @@ p {
   margin: 0 auto;
   padding: 1em 2em;
 }
+.buttons-group {
+  display: flex;
+  flex-direction: column;
+}
 
 .btn__cta {
-  padding: 1em;
+  padding: 0.75em;
+  margin: 0.25em 0;
   font-size: 1.25em;
   line-height: 1.35em;
   display: block;
@@ -35,9 +41,26 @@ p {
   background-color: var(--color-yellow);
   border-radius: 5px;
 }
+.btn__cta:hover {
+  transition: all 200ms ease;
+  background-color: var(--color-yellow-dark);
+}
+.btn__cta--empty {
+  background: none;
+  border: 3px solid var(--color-yellow);
+  color: var(--color-yellow);
+}
+.btn__cta--empty:hover {
+  background-color: var(--color-yellow);
+  color: #222;
+  transition: all 200ms ease;
+}
 .btn--center {
   display: block !important;
   margin: 0 auto;
+}
+.btn__price {
+  display: inline-block;
 }
 
 .Photo--instructor {
@@ -123,6 +146,7 @@ p {
 .Section__list li {
   font-size: 1em;
   margin-bottom: 1em;
+  line-height: 1.75em;
 }
 
 .Form {
@@ -148,6 +172,10 @@ p {
   font-weight: bold;
   text-align: center;
   background-color: var(--color-yellow);
+}
+
+.Instructor__title {
+  color: darkgray;
 }
 
 .Testimonials {
@@ -186,6 +214,39 @@ p {
   font-size: 1em;
 }
 
+.Pricing__text {
+  display: flex;
+  flex-direction: column;
+}
+.Pricing__heading {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 600;
+  border-left: 3px solid var(--color-yellow);
+  padding-left: 1em;
+  display: block;
+}
+.Pricing__content {
+  display: block;
+  line-height: 1.5em;
+  margin: 0.5em 0 1em 1em;
+}
+.Pricing__price {
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5em;
+  text-align: center;
+}
+.Pricing__price p {
+  font-weight: 100;
+  font-size: 3em;
+  margin: 0 1rem;
+}
+.Pricing__price span {
+  display: block;
+  margin: 0.75em 0;
+}
 
 .Footer {
   background: #222;
@@ -215,6 +276,14 @@ p {
 
   .Header__subtitle {
     font-size: 2em;
+  }
+
+  .buttons-group {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .buttons-group a {
+    width: 43%;
   }
 
   .Section__title {
@@ -252,14 +321,36 @@ p {
   .Instructor {
     display: flex;
   }
-  .Instructor__title {
+  .Instructor__name {
     margin: 0 auto;
+    padding: 0;
+  }
+  .Instructor__title {
+    margin: 1em auto;
     padding: 0;
   }
 
   .Photo--instructor {
     width: 512px;
     margin: 0 1em 0 0;
+  }
+
+  .Pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .Pricing__text {
+    width: 65%;
+  }
+  .Pricing__price {
+    width: 25%;
+  }
+  .Pricing__price p {
+    font-size: 2.5em;
+  }
+  .btn__price {
+    width: auto;
   }
 }
 
@@ -278,6 +369,19 @@ p {
   .Header__subtitle {
     font-size: 2em;
     margin-bottom: 1.5em;
+  }
+  .Header__date {
+    text-align: center;
+  }
+
+
+  .buttons-group {
+    justify-content: center;
+    align-content: center;
+  }
+  .buttons-group a {
+    width: 30%;
+    margin: 0.5em;
   }
 
   .container {
@@ -310,5 +414,15 @@ p {
   }
   .Testimonials__text {
     width: 200px;
+  }
+
+  .Pricing__price p {
+    font-size: 2.85em;
+  }
+  .btn__price {
+    display: block;
+    font-size: 1.25em;
+    padding: 0.5em;
+    margin-top: 2em;
   }
 }

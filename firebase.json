@@ -14,6 +14,9 @@
       "source": "/gracias",
       "destination": "/gracias.html",
       "type": 301
+    },{
+      "source": "/pago/academia-vip",
+      "destination": "https://sso.teachable.com/secure/88885/checkout/1876007/fullstackjs-academy"
     }]
   }
 }
