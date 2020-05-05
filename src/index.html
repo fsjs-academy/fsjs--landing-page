@@ -47,7 +47,7 @@
       }]
     }
   </script>
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&family=Work+Sans:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" type="text/css">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -62,16 +62,16 @@
           <img src="./img/horizontal_white_bg copy.png" alt="Fulstack JS Academy" />
         </figure>
         <h1 class="Header__title">
-          Conviértete en Desarrollador FullStack
+          Conviértete en Desarrollador/a FullStack
         </h1>
         <h2 class="Header__subtitle">
           Aprende a diseñar y desarrollar aplicaciones web modernas con el stack más demandado en tecnología (React + Node.js).<br>Formación durante 8 semanas y limitada a 5 plazas.
         </h2>
         <div class="buttons-group">
           <a class="btn__cta btn__cta--empty" href="#content">Ver contenido</a>
-          <a class="btn__cta" href="#join">Apúntate ahora</a>
+          <a class="btn__cta" href="#" onclick="ml_account('webforms', '1955372', 'u9j1r9', 'show')">Avísame de la próxima edición</a>
         </div>
-        <h3 class="Header__subtitle Header__date">Próxima edición: Mayo 2020</h3>
+        <!-- <h3 class="Header__subtitle Header__date">Próxima Edición: ???</h3> -->
       </div>
     </header>
 
@@ -225,6 +225,19 @@
 
     <section>
       <div class="container">
+        <h3 class="Section__title">Certifica tu formación</h3>
+        <p>Al final de la formación, para certificar tus conocimientos, presentarás un proyecto desarrollado en el curso y tus conocimientos serán certificados.</p>
+        <img src="./img/certificacion.png" alt="Certificado Fullstack JS Academy"">
+      </div>
+      <div class="container">
+        <h3 class="Section__title">Mejora tu perfil profesional en LinkedIn</h3>
+        <p>Puedes agregar tu certificación del curso a tu perfil en LinkedIN para atraer más y mejores propuestas de trabajo.</p>
+        <img src="./img/certificacion-linkedin.png" alt="Certificado FullStack JS Academy en Linkedin">
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
         <h3 class="Section__title">Lo que opinan sobre mi</h3>
         <div class="Testimonials">
           <div class="Testimonials__card">
@@ -275,31 +288,94 @@
 
         <div class="Pricing">
           <div class="Pricing__text">
-            <span class="Pricing__heading">Programa de 8 semanas.</span>
-            <span class="Pricing__content">Una clase teorico/práctica semanal, con retos y proyectos en los que trabajar durante la semana.</span>
-            <span class="Pricing__heading">Beneficios que incluye</span>
-            <span class="Pricing__content">Desarrollo de un proyecto real que sirva para tu curriculum/portfolio.</span>
-            <span class="Pricing__content">Mentoría técnica y soporte a través de un canal privado de Slack.</span>
-            <span class="Pricing__content">Acompañamiento y sesiones 1:1 para guiarte profesionalmente.</span>
-            <span class="Pricing__content">Revisión de portfolio, GitHub y Linkedin para atraer las mejores ofertas laborales.</span>
-            <span class="Pricing__heading">¿Qué aprendes?</span>
-            <span class="Pricing__content">A diseñar y crear aplicaciones web modernas con el stack tecnológico que demanda la industria y se usan día a día.</span>
-            <span class="Pricing__content">Podrás aplicar a ofertas de empleo de mayor nivel, donde los sueldos (en España) empiezan a partir de 24.000€ anuales en perfiles Junior y más de 40.000€ para perfiles Senior.</span>
+            <h5 class="Pricing__heading">Programa de 8 semanas.</h5>
+            <ul>
+              <li class="Pricing__content">Una clase teorico/práctica semanal, con retos y proyectos en los que trabajar durante la semana.</li>
+            </ul>
+            <h5 class="Pricing__heading">Beneficios que incluye</h5>
+            <ul>
+              <li class="Pricing__content">Desarrollo de un proyecto real que sirva para tu curriculum/portfolio.</li>
+              <li class="Pricing__content">Mentoría técnica y soporte a través de un canal privado de Slack.</li>
+              <li class="Pricing__content">Acompañamiento y sesiones 1:1 para guiarte profesionalmente.</li>
+              <li class="Pricing__content">Revisión de portfolio, GitHub y Linkedin para atraer las mejores ofertas laborales.</li>
+            </ul>
+            <h5 class="Pricing__heading">¿Qué aprendes?</h5>
+            <ul>
+              <li class="Pricing__content">A diseñar y crear aplicaciones web modernas con el stack tecnológico que demanda la industria y se usan día a día.</li>
+              <li class="Pricing__content">Podrás aplicar a ofertas de empleo de mayor nivel, donde los sueldos (en España) empiezan a partir de 24.000€ anuales en perfiles Junior y más de 40.000€ para perfiles Senior.</li>
+            </ul>
           </div>
           <div class="Pricing__price">
             <p>€ 1.995</p>
             <span>(+ Impuestos, si aplican)</span>
-            <span>Reserva tu plaza hoy mismo para tener acceso a la plataforma, la comunidad privada de Slack y empezar tu formación en Mayo.</span>
-            <span><strong>¡Limitado a 5 plazas!</strong></span>
-            <a href="/pago/academia-vip" class="btn__cta btn__price">Registrarme</a>
+            <span><strong>Plazo de inscripción cerrado.</strong></span>
+            <span>La primera edición ya está en marcha. Si quieres que te avisemos con prioridad la próxima vez que se organice una nueva edición, déjanos tu email</span>
+            <!-- <span>Reserva tu plaza hoy mismo para tener acceso a la plataforma, la comunidad privada de Slack y empezar tu formación el próximo 11 de Mayo.</span> -->
+            <!-- <span><strong>¡Limitado a 5 plazas!</strong></span> -->
+            <!-- <a href="https://sso.teachable.com/secure/88885/checkout/1876007/fullstackjs-academy" class="btn__cta btn__price">Registrarme</a> -->
+            <a href="#join" onclick="ml_account('webforms', '1955372', 'u9j1r9', 'show')" class="btn__cta btn__price">Avísame de la próxima edición</a>
           </div>
         </div>
 
       </div>
     </section>
 
+    <section>
+      <div class="container">
+        <h3 class="Section__title">Preguntas Frecuentes</h3>
+        <ul class="Section__list">
+          <li>
+            <h5 class="Instructor__name">¿Qué conocimientos se requieren para acceder a ésta formación?</h5>
+            Esta formación está pensada para personas que tienen conocimientos de programación (variables, bucles, condicionales, lógica, etc...) pero que tienen poca o ninguna experiencia en el desarollo web.
+            Si tienes conocimientos muy avanzados de Frontend y/o de Backend, esta formación puede resultarte poco útil.
+          </li>
+          <li>
+            <h5 class="Instructor__name">¿Se necesita un computador/laptop muy avanzado</h5>
+            No es necesario un equipo de última generación. Con que puedas tener un editor de código y un navegador es suficiente. Mi equipo personal tiene 7 años y funciona bien para estos temas.
+            Lo que si necesitarás es conexión a internet, ya que la formación es completamente en remoto.
+          </li>
+          <li>
+            <h5 class="Instructor__name">¿Es un bootcamp Fulltime? ¿Cuánto tiempo he de dedicarle?</h5>
+            El contenido para consumir será aproximadamente de 2h a la semana. Despues, el desarrollo de tu proyecto final, dependerá de ti y lo que puedas dedicar. Estimamos que con unas 5h-10h semanales (menos de 2h al día) podrás seguirlo perfectamente.
+          </li>
+          <li>
+            <h5 class="Instructor__name">¿El coste del curso es en Euros o Dólares?</h5>
+            El precio son 1995 euros, que es el equivalente a $2170 USD. Puedes pagar en tu moneda local si te es más sencillo, envía un correo a <strong>team@fullstackjs.academy</strong> con tu caso y lo solucionamos.
+          </li>
+          <li>
+            <h5 class="Instructor__name">¿Que significa "más impuestos, si aplica"?</h5>
+            Los impuestos dependen del pais de residencia del comprador. Si resides en Europa, se añadirá el % de IVA (Impuesto sobre el Valor Añadido) en el caso de España es un 21%. Si eres autonomo o empresa y estás registrado como operador intracomunitario, el IVA no se aplicará. De igual manera, si resides fuera de Europa, no se aplica ningún impuesto.
+          </li>
+          <li>
+            <h5 class="Instructor__name">¿Puedo solicitar factura?</h5>
+            Claro, en el momento de la compra, te llegará un correo con el recibo, facturado desde Teachable, la plataforma que utilizamos para el contenido del curso y pasarela de pago.
+          </li>
+          <li>
+            <h5 class="Instructor__name">¿Puedo pagar de otra forma que no sea tarjeta de débito/crédito?</h5>
+            Si, puedes pagar con PayPal y si lo deseas, también con Bitcoin. Envíanos un mensaje a <strong>team@fullstackjs.academy</strong> con tu caso.
+          </li>
+          <li>
+            <h5 class="Instructor__name">¿Se puede pagar a plazos?</h5>
+            Si, si prefieres pagar en 2 plazos de 1000€ (o el equivalente en tu moneda), puedes hacerlo. Envíanos un mensaje a <strong>team@fullstackjs.academy</strong> con tu caso.
+          </li>
+          <li>
+            <h5 class="Instructor__name">¿Cómo es el funcionamiento de la formación</h5>
+            Durante el tiempo de la formación (8 semanas) cada semana se subirá contenido nuevo relacionado con uno de los módulos a la plataforma. El contenido serán videos y texto con teoría y casos prácticos. Despues, durante la semana trabajarás en tu proyecto final, aplicando cada semana lo aprendido en el módulo. Tendrás soporte por un grupo de Slack Privado y sesiones 1 a 1 con el tutor para solucionar dudas más concretas y mentoría.
+          </li>
+          <li>
+            <h5 class="Instructor__name">¿Cuándo empieza?</h5>
+            Esta edición empezará el 11 de Mayo, auqnue en la plataforma ya tienes contenido "pre-work" para configurar tu equipo de desarrollo.
+          </li>
+          <li>
+            <h5 class="Instructor__name">¿Tienes más dudas?</h5>
+            Envíanos un mensaje a <strong>team@fullstackjs.academy</strong> con tus preguntas.
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <footer class="Footer">
-      <p class="Footer__text">Copyright &copy; • Fullstack JS Academy es un producto de OSOMSOFT OÜ • Todos los derechos reservados</p>
+      <p class="Footer__text">Copyright &copy;2020 • Fullstack JS Academy es un producto de OSOMSOFT OÜ • Todos los derechos reservados</p>
     </footer>
   </main>
 
@@ -325,6 +401,18 @@
   <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=223961479028761&ev=PageView&noscript=1"
   /></noscript>
+  <!-- MailerLite Universal -->
+  <script>
+  (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+  var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+  f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+  var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+  _.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+  var ml_account = ml('accounts', '1911680', 'f3r6u4d0n0', 'load');
+  </script>
+  <!-- End MailerLite Universal -->
+
 
 </body>
 </html>

@@ -4,7 +4,8 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
@@ -12,6 +13,11 @@ body {
   margin: 0 auto;
   padding: 0;
   color: #333;
+}
+
+h1,h3,h4 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
 }
 
 p {
@@ -91,7 +97,7 @@ p {
 }
 .Header__logo {
   margin: 0 auto 1em auto;
-  width: 350px;
+  width: 300px;
 }
 .Header__logo img {
   width: 100%;
@@ -100,11 +106,15 @@ p {
   margin: 0 auto;
   padding: 0;
   line-height: 1.25em;
+  text-align: center;
 }
 .Header__subtitle {
   font-size: 1.2em;
+  font-family: 'Source Sans Pro';
   font-weight: 300;
   line-height: 1.5em;
+  margin: 0.5rem;
+  text-align: center;
 }
 
 .CurriculumList {
@@ -117,6 +127,10 @@ p {
   padding: 0.5em;
   border-radius: 10px;
   display: flex;
+}
+.CurriculumList__item:hover {
+  transition: all 200ms ease;
+  box-shadow: 0 2px 15px rgba(27,31,35,0.35);
 }
 .CurriculumList__logo {
   width: auto;
@@ -174,6 +188,9 @@ p {
   background-color: var(--color-yellow);
 }
 
+.Instructor__name {
+  font-size: 1.5em;
+}
 .Instructor__title {
   color: darkgray;
 }
@@ -221,15 +238,19 @@ p {
 .Pricing__heading {
   text-transform: uppercase;
   font-size: 0.8em;
-  font-weight: 600;
+  font-family: 'Work Sans' sans-serif;
+  font-weight: 700;
   border-left: 3px solid var(--color-yellow);
   padding-left: 1em;
-  display: block;
+  margin:0;
 }
 .Pricing__content {
   display: block;
   line-height: 1.5em;
   margin: 0.5em 0 1em 1em;
+}
+.Pricing__content::before {
+  content: "✅ ";
 }
 .Pricing__price {
   background: white;
@@ -237,9 +258,11 @@ p {
   border-radius: 10px;
   padding: 1.5em;
   text-align: center;
+  align-self: flex-start;
 }
 .Pricing__price p {
-  font-weight: 100;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
   font-size: 3em;
   margin: 0 1rem;
 }
@@ -266,7 +289,7 @@ p {
   
   .Header__logo {
     margin: 2.5em 0;
-    width: 512px;
+    width: 390px;
     display: inline-block;
   }
   
@@ -357,7 +380,7 @@ p {
 @media (min-width: 1120px) {
   .Header__logo {
     margin: 1em 0 2em 0;
-    width: 512px;
+    width: 420px;
     display: inline-block;
   }
   
